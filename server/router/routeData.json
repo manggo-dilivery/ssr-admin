@@ -1,0 +1,90 @@
+{
+  "route": [
+    {
+      "name":"视频管理",
+      "path":"/videoConfig",
+      "source":"lock",
+      "isLayout": "true",
+      "key": "0",
+      "children": [
+        {
+          "name":"视频管理",
+          "path":"/videoConfig/index",
+          "source":"iconfont iconicon_sms",
+          "hasChildren":false,
+          "key": "0-1",
+          "meta": {
+            "name": "videoConfig",
+            "isTag": true
+          }
+        }
+      ]
+    },
+    {
+      "name":"用户管理",
+      "path":"/userManagement",
+      "isLayout": "true",
+      "source":"username",
+      "key": "1",
+      "children": [
+        {
+          "name":"用户管理",
+          "path":"/userManagement/index",
+          "source":"username",
+          "hasChildren":false,
+          "key": "1-1",
+          "meta": {
+            "name": "userManagement",
+            "isTag": true
+          }
+        }
+      ]
+    },
+    {
+      "name":"系统管理",
+      "path":"/systemManagement",
+      "source":"username",
+      "isLayout": "true",
+      "key": "2",
+      "children": [
+        {
+          "name":"网络配置",
+          "path":"/systemManagement/networkConfig",
+          "source":"lock",
+          "hasChildren":false,
+          "key": "2-1",
+          "meta": {
+            "name": "networkConfig",
+            "isTag": true
+          }
+        },
+        {
+          "name":"国标级联",
+          "path":"/systemManagement/GBCascade",
+          "source":"navigation",
+          "hasChildren":false,
+          "key": "2-2",
+          "meta": {
+            "name": "GBCascade",
+            "isTag": true
+          }
+        },
+        {
+          "name":"工地信息",
+          "path":"/systemManagement/constructionInfo",
+          "source":"password",
+          "hasChildren":false,
+          "key": "2-3",
+          "meta": {
+            "name": "constructionInfo",
+            "isTag": true
+          }
+        },
+      ]
+    },
+    {
+      path: '*',
+      redirect: '/404'
+    }
+  ]
+}

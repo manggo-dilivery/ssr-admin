@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  {{{ renderResourceHints() }}}
+  {{{ renderStyles() }}}
+</head>
+<body>
+  <!--vue-ssr-outlet-->
+{{{ renderState() }}}
+{{{ renderScripts() }}}
+</body>
+</html>
